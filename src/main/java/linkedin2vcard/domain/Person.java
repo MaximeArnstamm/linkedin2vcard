@@ -8,6 +8,8 @@ public class Person {
 	private String title;
 	private String url;
 
+	public Person() {}
+
 	public Person(String url) {
 		this.url = url;
 	}
