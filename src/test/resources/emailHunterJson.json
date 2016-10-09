@@ -1,0 +1,19 @@
+  {
+	"data": {
+		"email": "dustin@asana.com",
+		"score": 72,
+		"sources": {
+			"domain": "blog.asana.com",
+			"uri": "http://blog.asana.com",
+			"extracted_on": "2015-09-27"
+		}
+	},
+	"meta": {
+		"params": {
+			"first_name": "Dustin",
+			"last_name": "Moskovitz",
+			"domain": "stripe.com",
+			"company": null
+		}
+	}
+}
