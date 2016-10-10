@@ -12,6 +12,7 @@ public class VcardCreator {
 		n.setFamily(person.getLastName());
 		n.setGiven(person.getFirstName());
 		card.setStructuredName(n);
+		card.setFormattedName(person.getFirstName() + " " + person.getLastName());
 		card.addTitle(person.getTitle());
 		card.setOrganization(person.getCompany());
 		card.addEmail(person.getEmail(), EmailType.WORK);

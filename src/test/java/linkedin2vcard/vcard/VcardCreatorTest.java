@@ -26,6 +26,7 @@ public class VcardCreatorTest {
 		// Then
 		assertEquals(person.getFirstName(), actual.getStructuredName().getGiven());
 		assertEquals(person.getLastName(), actual.getStructuredName().getFamily());
+		assertEquals(person.getFirstName() + " " + person.getLastName(), actual.getFormattedName().getValue());
 		assertEquals(1, actual.getEmails().size());
 		assertEquals(person.getEmail(), actual.getEmails().get(0).getValue());
 		assertEquals(1, actual.getTitles().size());
