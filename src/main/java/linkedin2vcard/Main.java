@@ -32,7 +32,6 @@ public class Main {
 	}
 
 	private static String getUrl(String[] args) {
-		// TODO Auto-generated method stub
-		return null;
+		return args[0]; // TODO maybe more advanced command line. For now, just put the url
 	}
 }
