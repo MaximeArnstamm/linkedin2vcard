@@ -12,7 +12,10 @@ public class LinkedinScrapper {
 	public Person getPerson(String url) throws IOException {
 		Person person = new Person(url);
 
-		Document doc = Jsoup.connect(url).get();
+		Document doc = Jsoup.connect(url) //
+				.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:42.0) Gecko/20100101 Firefox/42.0") //
+				.referrer("http://www.google.com") //
+				.get();
 		String fullName = doc.getElementById("name").text();
 		String firstName = doc.select("#groups > .reg-upsell > ul > li > strong").first().text();
 		person.setFirstName(firstName);
